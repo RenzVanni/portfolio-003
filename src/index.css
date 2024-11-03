@@ -5,3 +5,31 @@
 p {
   color: #ffffff;
 }
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 2px; /* Adjust scrollbar width */
+  height: 2px; /* Adjust scrollbar height for horizontal bars */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Change track background color */
+  border-radius: 10px; /* Optional: add rounded corners */
+}
+
+/* Handle (scroll thumb) */
+::-webkit-scrollbar-thumb {
+  background: #ffffff; /* Change thumb color */
+  border-radius: 10px; /* Optional: add rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff; /* Darken thumb color on hover */
+}
+
+/* Corner when both scrollbars are present */
+::-webkit-scrollbar-corner {
+  background: #fff; /* Corner color */
+}
