@@ -1,4 +1,3 @@
-import React from "react";
 import AboutMe from "../pages/AboutMe";
 import Capstone from "../pages/Capstone";
 import Projects from "../pages/Projects";
