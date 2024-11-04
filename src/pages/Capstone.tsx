@@ -17,7 +17,7 @@ const Capstone = () => {
       </div>
 
       <div className="xl:flex space-y-4 xl:space-y-0 xl:space-x-4">
-        <div className="w-[400px]">
+        <div className="min-w-[300px] xl:w-1/2">
           <img src={data?.hero} alt="image" className="w-full object-cover" />
         </div>
         <div className="flex-1 space-y-4 sm:space-y-0 sm:grid grid-cols-2 gap-4">

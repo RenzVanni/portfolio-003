@@ -15,7 +15,7 @@ const Projects = () => {
               key={index}
               className="relative flex justify-end rounded-md overflow-hidden "
             >
-              <div className="absolute overflow-y-scroll inset-0 bg-gradient-to-t to-main from-header/50 md:bg-gradient-to-r">
+              <div className="absolute overflow-y-scroll inset-0 bg-gradient-to-t to-main from-header/20 md:bg-gradient-to-r">
                 <div className=" p-3 md:w-1/2">
                   <p className="font-semibold ">{item?.title}</p>
                   <Context>{item?.context}</Context>
