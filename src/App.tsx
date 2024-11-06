@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div
       id="Home"
-      className={`relative bg-main min-w-[300px] overflow-y-scroll  flex flex-col`}
+      className={`relative bg-main min-w-[300px] overflow-y-scroll  flex flex-col overflow-x-hidden`}
     >
       <Header setIsMenu={setIsMenu} isMenu={isMenu} />
       <div className="flex-1 h-full p-4 space-y-4 items-start justify-center md:flex md:p-8 md:space-x-8 lg:px-36 md:space-y-0 overflow-y-scroll">

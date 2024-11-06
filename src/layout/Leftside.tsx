@@ -9,6 +9,7 @@ const Leftside = () => {
         <div className="flex items-center space-x-4 md:block md:space-y-8 md:space-x-0">
           <div className="w-32 h-32 md:w-auto md:h-auto max-w-[296px] max-h-[296px] rounded-full overflow-hidden">
             <img
+              loading="lazy"
               src="/photo/grad-pic-1.jpeg"
               alt="profile-pic"
               className="w-full h-full object-cover object-top"

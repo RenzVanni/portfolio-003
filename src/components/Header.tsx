@@ -3,6 +3,7 @@ import { navigationData } from "../data/navigation";
 import { Link } from "react-scroll";
 import { IoIosExit } from "react-icons/io";
 import { Logo2 } from "../assets/logo";
+import { motion } from "framer-motion";
 
 const Header = ({
   setIsMenu,
@@ -12,7 +13,11 @@ const Header = ({
   isMenu: boolean;
 }) => {
   return (
-    <div>
+    <motion.div
+      initial={{ y: -50 }}
+      whileInView={{ y: 0 }}
+      transition={{ y: { type: "spring", stiffness: 50 } }}
+    >
       <div className="bg-header flex items-center p-4 space-x-4 ">
         <div
           onClick={() => setIsMenu(true)}
@@ -64,7 +69,7 @@ const Header = ({
           </div>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

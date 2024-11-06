@@ -2,16 +2,17 @@ import data from "../data/capstone";
 import ContextTitle from "../components/ContextTitle";
 import Icons from "../components/Icons";
 import { NAVCAPSTONE } from "../constants/navigation";
+import Context from "../components/Context";
 
 const Capstone = () => {
   return (
     <div id={NAVCAPSTONE} className="space-y-4">
       <ContextTitle>Capstone</ContextTitle>
       <div className="">
-        <p className="text-white text-md font-semibold">{data?.title}</p>
-        <p className="text-white text-sm mb-3">{data?.context}</p>
+        <ContextTitle size="md">{data?.title}</ContextTitle>
+        <Context>{data?.context}</Context>
         <div>
-          <p className="font-semibold mb-3">Tech Stack</p>
+          <ContextTitle size="md">Tech Stack</ContextTitle>
           <Icons icons={data.tech} />
         </div>
       </div>
