@@ -18,16 +18,13 @@ const Header = ({
       whileInView={{ y: 0 }}
       transition={{ y: { type: "spring", stiffness: 50 } }}
     >
-      <div className="bg-header flex items-center p-4 space-x-4 ">
-        <div className="flex flex-1 items-center justify-between">
-          <Logo2 />
-
-          <div
-            onClick={() => setIsMenu(true)}
-            className="border border-border cursor-pointer hover:scale-105 p-1.5 rounded-md md:hidden"
-          >
-            <LuMenu className="text-border" />
-          </div>
+      <div className="bg-header flex items-center justify-between p-4 space-x-4 ">
+        <Logo2 />
+        <div
+          onClick={() => setIsMenu(true)}
+          className="border border-border cursor-pointer hover:scale-105 p-1.5 rounded-md md:hidden"
+        >
+          <LuMenu className="text-border" />
         </div>
 
         <div className="hidden md:flex flex-1 items-center justify-center space-x-4">
