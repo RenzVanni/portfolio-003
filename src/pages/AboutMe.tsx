@@ -3,6 +3,7 @@ import { workData } from "../data/work";
 import ContextTitle from "../components/ContextTitle";
 import Context from "../components/Context";
 import { NAVABOUTME } from "../constants/navigation";
+import Cards from "../components/Cards";
 
 const AboutMe = () => {
   return (
@@ -13,21 +14,14 @@ const AboutMe = () => {
 
       <div className="sm:grid grid-cols-2">
         {workData.map((item, index) => (
-          <div
+          <Cards
             key={index}
-            className="border border-border flex justify-between p-3 rounded-md"
-          >
-            <div className="">
-              <p className="text-white font-semibold mb-2">{item.role}</p>
-              <p className="text-white mb-2">{item.company}</p>
-              <p className="text-white text-[12px]">
-                {item.startDate} - {item.endDate || "Present"}
-              </p>
-            </div>
-            <div className="w-[70px] flex items-center">
-              <img src={item.logo} alt="logo" className="w-full object-cover" />
-            </div>
-          </div>
+            role={item?.role}
+            company={item?.company}
+            startDate={item?.startDate}
+            logo={item?.logo}
+            isWork={true}
+          />
         ))}
       </div>
     </div>

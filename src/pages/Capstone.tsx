@@ -3,6 +3,7 @@ import ContextTitle from "../components/ContextTitle";
 import Icons from "../components/Icons";
 import { NAVCAPSTONE } from "../constants/navigation";
 import Context from "../components/Context";
+import Cards from "../components/Cards";
 
 const Capstone = () => {
   return (
@@ -19,17 +20,16 @@ const Capstone = () => {
 
       <div className="xl:flex space-y-4 xl:space-y-0 xl:space-x-4">
         <div className="min-w-[300px] xl:w-1/2">
-          <img src={data?.hero} alt="image" className="w-full object-cover" />
+          <img
+            loading="lazy"
+            src={data?.hero}
+            alt="image"
+            className="w-full object-cover"
+          />
         </div>
         <div className="flex-1 space-y-4 sm:space-y-0 sm:grid grid-cols-2 gap-4">
           {data.devs.map((item, index) => (
-            <div key={index} className="border border-border p-3 rounded-md">
-              <div></div>
-              <div>
-                <p className="font-semibold">{item.name}</p>
-                <p className="text-white">{item.role}</p>
-              </div>
-            </div>
+            <Cards key={index} name={item?.name} role={item?.role} />
           ))}
         </div>
       </div>

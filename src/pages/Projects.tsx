@@ -1,7 +1,7 @@
 import data from "../data/projects";
 import ContextTitle from "../components/ContextTitle";
 import { NAVPROJECTS } from "../constants/navigation";
-import Cards from "../components/Cards";
+import ProjectCards from "../components/ProjectCards";
 
 const Projects = () => {
   return (
@@ -9,7 +9,7 @@ const Projects = () => {
       <ContextTitle>Projects</ContextTitle>
       <div className="space-y-4 md:space-y-8 overflow-x-hidden">
         {data.map((item, index) => {
-          return <Cards item={item} index={index} />;
+          return <ProjectCards key={index} item={item} />;
         })}
       </div>
     </div>

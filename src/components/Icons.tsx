@@ -18,13 +18,13 @@ const Icons = ({
         const Icon = item;
         return link && linkData ? (
           <motion.div
+            key={index}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ opacity: { duration: 0.8 } }}
           >
-            <a key={index} href={linkData[index]} target="_blank">
+            <a href={linkData[index]} target="_blank">
               <Icon
-                key={index}
                 className={`text-white ${
                   size ? `text-${size}` : "text-3xl"
                 }hover:scale-110 cursor-pointer`}
@@ -33,12 +33,12 @@ const Icons = ({
           </motion.div>
         ) : (
           <motion.div
+            key={index}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ opacity: { duration: 1, delay: 0.3 } }}
           >
             <Icon
-              key={index}
               className={`text-white ${size ? `text-${size}` : "text-3xl"}`}
             />
           </motion.div>
