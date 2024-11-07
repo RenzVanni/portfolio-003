@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { IconType } from "react-icons";
-import { DELAY, DURATION } from "../constants/animations";
+import { DURATION } from "../constants/animations";
 
 const Icons = ({
   icons,
