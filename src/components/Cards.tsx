@@ -1,10 +1,12 @@
+import { NA } from "../constants/default";
+
 const Cards = ({
-  name = "N/A",
-  role = "N/A",
-  company = "N/A",
+  name = NA,
+  role = NA,
+  company = NA,
   isWork,
-  startDate = "N/A",
-  endDate = "N/A",
+  startDate = NA,
+  endDate = NA,
   logo,
 }: {
   name?: string;

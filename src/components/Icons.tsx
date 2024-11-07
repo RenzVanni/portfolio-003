@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { IconType } from "react-icons";
+import { DELAY, DURATION } from "../constants/animations";
 
 const Icons = ({
   icons,
@@ -21,7 +22,7 @@ const Icons = ({
             key={index}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ opacity: { duration: 0.8 } }}
+            transition={{ opacity: { duration: DURATION } }}
           >
             <a href={linkData[index]} target="_blank">
               <Icon
@@ -36,7 +37,7 @@ const Icons = ({
             key={index}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ opacity: { duration: 1, delay: 0.3 } }}
+            transition={{ opacity: { duration: DURATION, delay: DELAY } }}
           >
             <Icon
               className={`text-white ${size ? `text-${size}` : "text-3xl"}`}

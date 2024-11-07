@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { DURATION } from "../constants/animations";
 
 const ContextTitle = ({
   children,
@@ -14,7 +15,7 @@ const ContextTitle = ({
       whileInView={{ x: 0, opacity: 1 }}
       transition={{
         x: { type: "spring", stiffness: 50 },
-        opacity: { duration: 0.5 },
+        opacity: { duration: DURATION },
       }}
       className={`text-white ${
         size ? `text-${size}` : "text-lg"

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Icons from "./Icons";
 import Context from "./Context";
 import { Projects_Prop } from "../types/project_type";
+import { DURATION } from "../constants/animations";
 
 const ProjectCards = ({ item }: { item: Projects_Prop }) => {
   return (
@@ -10,7 +11,7 @@ const ProjectCards = ({ item }: { item: Projects_Prop }) => {
       whileInView={{ x: 0, opacity: 1 }}
       transition={{
         x: { type: "spring", stiffness: 50 },
-        opacity: { duration: 0.5 },
+        opacity: { duration: DURATION },
       }}
       className="relative flex justify-end rounded-md overflow-hidden "
     >
