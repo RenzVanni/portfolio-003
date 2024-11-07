@@ -7,11 +7,11 @@ const Rightside = () => {
   return (
     <div className="flex-1 h-full relative space-y-4 md:pr-2">
       <AboutMe />
-      <hr className="bg-border " />
+      <hr className="border border-border " />
       <Capstone />
-      <hr className="bg-border " />
+      <hr className="border border-border " />
       <Projects />
-      <hr className="bg-border " />
+      <hr className="border border-border " />
       <ContactMe />
     </div>
   );

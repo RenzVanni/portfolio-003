@@ -5,9 +5,11 @@ import { DURATION } from "../constants/animations";
 const ContextTitle = ({
   children,
   size,
+  isProject,
 }: {
   children: React.ReactNode;
   size?: string;
+  isProject?: boolean;
 }) => {
   return (
     <motion.div
@@ -18,8 +20,8 @@ const ContextTitle = ({
         opacity: { duration: DURATION },
       }}
       className={`text-white ${
-        size ? `text-${size}` : "text-lg"
-      } font-semibold w-fit`}
+        size ? `text-${size}` : "text-xl"
+      } font-semibold w-fit ${!isProject && "mb-1"}`}
     >
       {children}
     </motion.div>

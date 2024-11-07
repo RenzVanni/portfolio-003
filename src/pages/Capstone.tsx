@@ -19,7 +19,7 @@ const Capstone = () => {
       </div>
 
       <div className="xl:flex space-y-4 xl:space-y-0 xl:space-x-4">
-        <div className="min-w-[300px] xl:w-1/2">
+        <div className="min-w-[300px] rounded-md overflow-hidden xl:w-1/2">
           <img
             loading="lazy"
             src={data?.hero}

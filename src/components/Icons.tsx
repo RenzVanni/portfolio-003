@@ -28,7 +28,7 @@ const Icons = ({
               <Icon
                 className={`text-white ${
                   size ? `text-${size}` : "text-3xl"
-                }hover:scale-110 cursor-pointer`}
+                } hover:scale-110 cursor-pointer`}
               />
             </a>
           </motion.div>

@@ -3,6 +3,7 @@ import Icons from "./Icons";
 import Context from "./Context";
 import { Projects_Prop } from "../types/project_type";
 import { DURATION } from "../constants/animations";
+import ContextTitle from "./ContextTitle";
 
 const ProjectCards = ({ item }: { item: Projects_Prop }) => {
   return (
@@ -22,14 +23,18 @@ const ProjectCards = ({ item }: { item: Projects_Prop }) => {
 
           <div className="flex space-x-4 mb-3">
             <div className="min-w-fit h-fit">
-              <p className="min-w-full">Tech Stack</p>
+              <ContextTitle size="sm" isProject={true}>
+                Tech Stack
+              </ContextTitle>
             </div>
             <Icons icons={item.techs} size="lg" />
           </div>
 
           <div className="flex items-center space-x-4">
             <div className="min-w-fit h-fit">
-              <p className="min-w-full">Links</p>
+              <ContextTitle size="sm" isProject={true}>
+                Links
+              </ContextTitle>
             </div>
 
             <Icons
