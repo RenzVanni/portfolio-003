@@ -37,7 +37,7 @@ const Icons = ({
             key={index}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ opacity: { duration: DURATION, delay: DELAY } }}
+            transition={{ opacity: { duration: DURATION } }}
           >
             <Icon
               className={`text-white ${size ? `text-${size}` : "text-3xl"}`}

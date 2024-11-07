@@ -59,7 +59,7 @@ const ContactMe = () => {
             <input
               type="text"
               placeholder="ex: Jose Dela Cruz"
-              className="text-white bg-transparent p-3 rounded-md border border-border outline-none placeholder:text-white"
+              className="text-white bg-transparent p-3 rounded-md border border-border outline-none placeholder:text-white/50"
               value={data.name}
               onChange={(userInput) =>
                 handleTextChange({ e: userInput, type: "name" })
@@ -74,7 +74,7 @@ const ContactMe = () => {
             <input
               type="email"
               placeholder="ex: Jose@gmail.com"
-              className="text-white bg-transparent p-3 rounded-md border border-border outline-none placeholder:text-white"
+              className="text-white bg-transparent p-3 rounded-md border border-border outline-none placeholder:text-white/50"
               value={data.email}
               onChange={(userInput) =>
                 handleTextChange({ e: userInput, type: "email" })
@@ -90,7 +90,7 @@ const ContactMe = () => {
           <input
             type="text"
             placeholder="ex: Coding"
-            className="text-white bg-transparent p-3 rounded-md border border-border outline-none placeholder:text-white"
+            className="text-white bg-transparent p-3 rounded-md border border-border outline-none placeholder:text-white/50"
             value={data.subject}
             onChange={(userInput) =>
               handleTextChange({ e: userInput, type: "subject" })
@@ -106,7 +106,7 @@ const ContactMe = () => {
             name=""
             id=""
             placeholder="ex: This is a message to you..."
-            className="text-white bg-transparent p-3 rounded-md border border-border outline-none placeholder:text-white resize-none h-[150px]"
+            className="text-white bg-transparent p-3 rounded-md border border-border outline-none placeholder:text-white/50 resize-none h-[150px]"
             value={data.content}
             onChange={(userInput) =>
               handleTextChange({ e: userInput, type: "content" })
