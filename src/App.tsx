@@ -20,9 +20,11 @@ const App = () => {
       </div>
 
       <div className="bg-gradient-to-t from-main to-transparent h-20 fixed bottom-0 right-0 left-0"></div>
-      <Link to="Home" smooth={true} duration={500}>
-        <MdOutlineKeyboardDoubleArrowUp className="text-white text-3xl z-10 fixed bottom-10 right-10 animate-bounce" />
-      </Link>
+      <div className="cursor-pointer">
+        <Link to="Home" smooth={true} duration={500}>
+          <MdOutlineKeyboardDoubleArrowUp className="text-white text-3xl z-10 fixed bottom-10 right-10 animate-bounce" />
+        </Link>
+      </div>
     </div>
   );
 };
