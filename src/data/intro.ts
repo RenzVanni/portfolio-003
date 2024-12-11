@@ -7,6 +7,10 @@ import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { RiNotionFill } from "react-icons/ri";
+import { SiMysql } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiPrisma } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 
 const data = {
   id: 1,
@@ -18,13 +22,17 @@ const data = {
   tech: [
     FaHtml5,
     FaCss3Alt,
-    RiTailwindCssFill,
     RiJavascriptLine,
     TbBrandTypescript,
+    RiTailwindCssFill,
     FaReact,
+    TbBrandNextjs,
     FaNodeJs,
     SiExpress,
     RiNotionFill,
+    SiMysql,
+    SiMongodb,
+    SiPrisma,
   ],
 };
 
