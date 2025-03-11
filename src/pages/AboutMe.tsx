@@ -19,6 +19,7 @@ const AboutMe = () => {
             role={item?.role}
             company={item?.company}
             startDate={item?.startDate}
+            endDate={item?.endDate}
             logo={item?.logo}
             isWork={true}
           />

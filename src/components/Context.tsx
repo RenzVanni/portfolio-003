@@ -8,7 +8,7 @@ const Context = ({ children }: { children: React.ReactNode }) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ opacity: { duration: DURATION } }}
-      className="text-white text-sm mb-3"
+      className="text-white text-sm mb-3 "
     >
       {children}
     </motion.div>
