@@ -27,7 +27,6 @@ const ContactMe = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLElement>) => {
     e.preventDefault();
     const { name, email, subject, content } = data;
-    console.log(data);
     if (name && email && subject && content) {
       try {
         const response = axios.post(`${import.meta.env.VITE_DOMAIN}`, {
@@ -42,7 +41,6 @@ const ContactMe = () => {
           error: <b>Something went wrong!</b>,
         });
       } catch (error: any) {
-        console.log(error.message);
         throw new Error(error.message);
       }
     }

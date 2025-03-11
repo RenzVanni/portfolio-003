@@ -11,6 +11,9 @@ import { SiMysql } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiPrisma } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const data = {
   id: 1,
@@ -20,17 +23,20 @@ const data = {
     "I specialized in HTML, CSS, and React, I also know a little bit of MERN stack. My goal as frontend developer was to enhance what i currently know and in the future become a full stack developer.",
   repo: "https://github.com/RenzVanni",
   tech: [
-    FaHtml5,
-    FaCss3Alt,
+    FaJava,
+    BiLogoSpringBoot,
     RiJavascriptLine,
     TbBrandTypescript,
-    RiTailwindCssFill,
     FaReact,
     TbBrandNextjs,
     FaNodeJs,
     SiExpress,
+    FaHtml5,
+    FaCss3Alt,
+    RiTailwindCssFill,
     RiNotionFill,
     SiMysql,
+    BiLogoPostgresql,
     SiMongodb,
     SiPrisma,
   ],

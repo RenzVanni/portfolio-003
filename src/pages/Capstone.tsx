@@ -14,7 +14,7 @@ const Capstone = () => {
         <Context>{data?.context}</Context>
         <div>
           <ContextTitle size="md">Tech Stack</ContextTitle>
-          <Icons icons={data.tech} />
+          <Icons size="2xl" icons={data.tech} />
         </div>
       </div>
 
