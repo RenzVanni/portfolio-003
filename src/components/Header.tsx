@@ -5,7 +5,6 @@ import { IoIosExit } from "react-icons/io";
 import { Logo2 } from "../assets/logo";
 import { AnimatePresence, motion } from "framer-motion";
 import { HEADER_VARIANT, HEADER_VARIANT_1 } from "../constants/animations";
-import { useEffect, useRef } from "react";
 
 const Header = ({
   setIsMenu,
