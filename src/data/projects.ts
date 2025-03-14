@@ -1,12 +1,12 @@
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { RiJavascriptLine } from "react-icons/ri";
-import { TbBrandTypescript } from "react-icons/tb";
+// import { TbBrandTypescript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
-import { RiNotionFill } from "react-icons/ri";
-import { RiTailwindCssFill } from "react-icons/ri";
+// import { RiNotionFill } from "react-icons/ri";
+// import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoMongodb } from "react-icons/bi";
 
 import { FaGithub } from "react-icons/fa";
@@ -14,28 +14,28 @@ import { IoLogoVercel } from "react-icons/io5";
 // import { Projects_Prop } from "../types/projects_prop";
 
 const data = [
-  {
-    id: 1,
-    title: "Midnotes",
-    context:
-      "Midnotes is a note taking web application inspired by Notion. Fun fact about the Midnotes aside from it look like the notion ui, the database that was used to build this application is the notion api.",
-    hero: "/thumbnail/todo-list-v2.png",
-    linksIcon: [FaGithub, IoLogoVercel],
-    link: [
-      "https://github.com/RenzVanni/Todo-List-v2",
-      "https://todo-list-v2-dev.vercel.app/",
-    ],
-    techs: [
-      FaHtml5,
-      FaCss3Alt,
-      RiTailwindCssFill,
-      TbBrandTypescript,
-      FaReact,
-      FaNodeJs,
-      SiExpress,
-      RiNotionFill,
-    ],
-  },
+  // {
+  //   id: 1,
+  //   title: "Midnotes",
+  //   context:
+  //     "Midnotes is a note taking web application inspired by Notion. Fun fact about the Midnotes aside from it look like the notion ui, the database that was used to build this application is the notion api.",
+  //   hero: "/thumbnail/todo-list-v2.png",
+  //   linksIcon: [FaGithub, IoLogoVercel],
+  //   link: [
+  //     "https://github.com/RenzVanni/Todo-List-v2",
+  //     "https://todo-list-v2-dev.vercel.app/",
+  //   ],
+  //   techs: [
+  //     FaHtml5,
+  //     FaCss3Alt,
+  //     RiTailwindCssFill,
+  //     TbBrandTypescript,
+  //     FaReact,
+  //     FaNodeJs,
+  //     SiExpress,
+  //     RiNotionFill,
+  //   ],
+  // },
   {
     id: 2,
     title: "Todos",
